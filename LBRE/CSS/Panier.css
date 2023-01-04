@@ -1,0 +1,38 @@
+/* Ce fichier css permet de modifier l'apparence des éléments du panier */
+
+
+.Retirer{
+    visibility:hidden;
+	background-color: #1639A0;
+	color: white;
+	font-weight: bold;
+	font-family: serif;
+	font-size: 15px;
+	height: 25px;
+	width: 75px;
+	text-align: center;
+}
+
+#acheterPanier {
+	background-color: #1639A0;
+	color: white;
+	height: 40px;
+	width: 150px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: serif;
+	margin-left:100px;
+}
+
+#TitrePanier{
+	text-align:center;
+	text-decoration:underline;
+	background-color: #1639A0;
+}
+
+#total {
+	margin-left:130px;
+}
+

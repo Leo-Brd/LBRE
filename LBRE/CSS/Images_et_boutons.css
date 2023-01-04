@@ -1,0 +1,56 @@
+
+/* Ce fichier css permet de modifier l'apparence des boutons et des images dont le logo */
+
+
+#logo {
+	 width : 160px;
+	 height : 130px;
+}
+
+.img{
+	height: 225px;
+	width: 300px
+}
+
+.boutonIdentification {
+	background-color: #00BFFF;
+	color: white;
+	display: inline-block;
+	height: 40px;
+	width: 90px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: serif;
+}
+
+.Bouton_Acheter{
+	margin-left:640px;
+	cursor: pointer;
+	height: 30px;
+	width: 150px;
+	font-weight: bold;
+	background-color: #1639A0;
+	color: white;
+}
+
+.boutoncategorie {
+	background-color: #00BFFF;
+	color: white;
+	display: inline-block;
+	height: 62.5px;
+	width: 250px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: serif;
+}
+
+#boutonValider {
+	background-color: #00BFFF;
+	margin-left:60px;
+}
+
+

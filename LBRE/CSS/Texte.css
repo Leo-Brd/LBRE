@@ -1,0 +1,36 @@
+
+/* Ce fichier css permet de modifier l'apparence de differents textes mais aussi de cacher le formulaire */
+
+#bienvenue {
+	margin-left: 37%;
+	color: #00BFFF ;
+	font-size: 44px;
+}
+
+#soustitre {
+	margin-left: 38%;
+	color: #00BFFF ;
+	font-size: 20px;
+}
+
+.Noms{
+	text-align:center;
+	text-decoration:underline;
+}
+
+.Descriptions{
+	text-align:center;
+}
+
+.Prix{
+	text-align:center;
+}
+
+
+.formulaire{
+	visibility:hidden;
+}
+
+
+
+

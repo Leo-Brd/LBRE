@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<! Ce fichier html est le corps du site car il contient le DOM >
+
+
+<html lang="fr">
+
+    <head>
+		<! On affecte ici le titre de la page et on fait le lien entre les fichiers css >
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+		<title>Bordet Leo, Egal Rayan</title>
+		
+		<link href="CSS/Grille.css" rel="stylesheet"  media="all" type="text/css" >
+		<link href="CSS/Images_et_boutons.css" rel="stylesheet"  media="all" type="text/css" >
+		<link href="CSS/Texte.css" rel="stylesheet"  media="all" type="text/css" >
+		<link href="CSS/Panier.css" rel="stylesheet"  media="all" type="text/css" >
+		
+    
+	</head>
+	
+    <body bgcolor=#0A074F >
+	
+		<! Chaque balise div est un élément de la grille que l'on remplit >
+		<div class="grid-container">
+			<! La premiere balise represente l'emplacement du logo du site >
+			<div class="logoEmplacement">
+				<img src="image/LogoRayan.jpg" id="logo">
+			</div>
+			
+			<! La deuxieme balise represente l'emplacement du bouton d'identification ainsi que le formulaire qui est caché grâce au css >
+			<div id ="identificationEmplacement" class="identificationEmplacement">
+				<input id="boutonIdentification" class="boutonIdentification" type="button" value="S'identifier">
+				
+				<form action="php/reception.php" method="get"> 
+					<label id="php1" class="formulaire" for="name">Nom :</label> 
+					<input id="php2" class="formulaire" name="name" value=""></br>
+					<label id="php3" class="formulaire" for="firstname">Prénom :</label>
+					<input id="php4" class="formulaire" name="firstname" value=""></br>
+				</form>
+				<input id="boutonValider" class="formulaire" type="button" value="Valider">
+			</div>
+			
+			<! La troisieme balise represente le message de bienvenue >
+			<div class="bienvenue">
+				<h1 id="bienvenue"> Bienvenue !</h1>
+				<h3 id="soustitre"> Veuillez vous identifier ...</h3>
+			</div>
+			
+			<! La quatrieme balise represente l'emplacement du panier >
+			<div class="panierEmplacement">
+				<h2 id="TitrePanier">Mon panier</h2>
+				<h3 id="PanierJeu1" class="PanierTitresJeux">-</h3>
+				<input id="Retirer1" class="Retirer" type="button" value="Retirer">
+				<h3 id="PanierJeu2" class="PanierTitresJeux">-</h3>
+				<input id="Retirer2" class="Retirer" type="button" value="Retirer">
+				<h3 id="PanierJeu3" class="PanierTitresJeux">-</h3>
+				<input id="Retirer3" class="Retirer" type="button" value="Retirer">
+				<h3 id="PanierJeu4" class="PanierTitresJeux">-</h3>
+				<input id="Retirer4" class="Retirer" type="button" value="Retirer">
+				<h3 id="PanierJeu5" class="PanierTitresJeux">-</h3>
+				<input id="Retirer5" class="Retirer" type="button" value="Retirer"><br>
+				<h3 id="total">TOTAL : <span id="valeurtotale">0</span> $</h3>
+				<input id="acheterPanier" type="button" value="Acheter les articles">
+			</div>
+			
+			<! La cinquieme balise represente l'emplacement des boutons qui amènent aux différentes catégories de jeux >
+			<div class="categoriesEmplacement">
+				<input id="FPS" class="boutoncategorie" type="button" value="First Personal Shooter"><br>
+				<input id="Retro" class="boutoncategorie" type="button" value="Jeux Rétros"><br>
+				<input id="Course" class="boutoncategorie" type="button" value="Jeux de Course"><br>
+				<input id="Aventure" class="boutoncategorie" type="button" value="Jeux d'Aventure et d'action"><br>
+				<input id="Horreur" class="boutoncategorie" type="button" value="Jeux d'Horreur"><br>
+				<input id="Combat" class="boutoncategorie" type="button" value="Jeux de Combats"><br>
+				<input id="Manga" class="boutoncategorie" type="button" value="Jeux inspirés de mangas">
+				<input id="RPG" class="boutoncategorie" type="button" value="RPGs">
+				<input id="Sport" class="boutoncategorie" type="button" value="Jeux de Sport">
+			</div>
+			
+			<! La sixième balise représente les emplacements des articles et contient d'autre balises div qui separent l'image du jeu de sa description , son prix , son titre et le bouton d'achat >
+			<! Ce sont les jeux de la catégorie First Personal Shooter qui apparaissent au lancement du site >
+			<div class="jeuxEmplacement">
+				<div id="imageEmplacement1" class="imagesEmplacement">
+					<img src="image/overwatch.jpg" id="img1" class="img">
+				</div>
+				<div id="descriptionEmplacement1" class="descriptionEmplacement">
+					<h3 id="Nom1" class="Noms">Overwatch</h3>
+					
+					<p id="description1" class="Descriptions">Overwatch est un jeu vidéo de tir (FPS)
+					en ligne et en équipe, développé et publié par Blizzard Entertainment. L histoire
+					d Overwatch se situe dans un monde néo-futuriste (plus précisément en 2077), 
+					30 ans après la résolution d'une guerre impliquant robots et humains , appelée
+					Crise des Omniums. C'est à cette période que fut créée l'organisation d'Overwatch,
+					dans le but d'éradiquer la menace que représentaient les Omniaques insurgés.</p>
+					
+					<p id="prix1" class="Prix">PRIX : <span id="valeur1">10</span> $</p>
+					
+					<input id="Bouton_Acheter_1" class="Bouton_Acheter" type="button" value="Ajouter au panier">
+				</div>
+				<div id="imageEmplacement2" class="imagesEmplacement">
+					<img src="image/CallofDutyBlackOps4.png" id="img2" class="img">
+				</div>
+				<div id="descriptionEmplacement2" class="descriptionEmplacement">
+					<h3 id="Nom2" class="Noms">Call Of Duty Black Ops 4</h3>
+					
+					<p id="description2" class="Descriptions"> Call of Duty: Black Ops IIII est un jeu vidéo
+					de tir à la première personne développé par Treyarch et édité par Activision, sorti le 12
+					octobre 2018 . Il s'agit du 15e épisode de la série Call of Duty et 4e opus de la série Black Ops.
+					Il propose son mode multijoueur et son mode zombie habituels mais renouvelés avec le choix de nombreux
+					agent ainsi qu'un nouveau mode battle royale. </p>
+					
+					<p id="prix2" class="Prix">PRIX : <span id="valeur2">11</span> $</p>
+					
+					<input id="Bouton_Acheter_2" class="Bouton_Acheter" type="button" value="Ajouter au panier">
+				</div>
+				<div id="imageEmplacement3" class="imagesEmplacement">
+					<img src="image/Battlefield5.png" id="img3" class="img">
+				</div>
+				<div id="descriptionEmplacement3" class="descriptionEmplacement">
+					<h3 id="Nom3" class="Noms">BattleField 5</h3>
+					
+					<p id="description3" class="Descriptions">Battlefield V est un jeu vidéo de tir à la première
+					personne développé par DICE et édité par Electronic Arts, sorti le 20 novembre 2018 sur 
+					PlayStation 4, Xbox One et Microsoft Windows. Ce douzième opus de la série se déroule dans le
+					contexte de la Seconde Guerre Mondiale, revenant aux origines de la série. Semblable aux opus précédents,
+					Battlefield V est un jeu de tir à la première personne se basant sur le travail d'équipe pouvant accueillir
+					jusqu'à 64 joueurs par partie.</p>
+					
+					<p id="prix3" class="Prix">PRIX : <span id="valeur3">9</span> $</p>
+					
+					<input id="Bouton_Acheter_3" class="Bouton_Acheter" type="button" value="Ajouter au panier">
+				</div>
+				<div id="imageEmplacement4" class="imagesEmplacement">
+					<img src="image/BattleFront2.png" id="img4" class="img">
+				</div>
+				<div id="descriptionEmplacement4" class="descriptionEmplacement">
+					<h3 id="Nom4" class="Noms">Star Wars BattleFront 2</h3>
+					
+					<p id="description4" class="Descriptions">Star Wars Battlefront II est un jeu vidéo de tir à la première
+					et troisième personne développé par DICE, Criterion Games et Motive Studios, et édité par Electronic Arts.
+					Il fait suite au jeu vidéo Star Wars: Battlefront sorti en 2015. La campagne du jeu, présente dans ce second
+					opus, débute après les événements du film Star Wars : Le Retour du Jedi, lorsque la base sidérale de l'Empire
+					galactique, l'Étoile de la Mort, explose, mettant fin au règne de l'Empereur.</p>
+					
+					<p id="prix4" class="Prix">PRIX : <span id="valeur4">12</span> $</p>
+					
+					<input id="Bouton_Acheter_4" class="Bouton_Acheter" type="button" value="Ajouter au panier">
+				</div>
+			</div>
+        </div>
+
+   	</body>
+	
+<! Ici , on fait le lien entre le programme principal et les fichiers javascript >
+<script src="JS/ChangementCategorie.js" type="text/javascript" ></script>
+<script src="JS/Inscription.js" type="text/javascript" ></script>
+<script src="JS/Panier.js" type="text/javascript" ></script>
+<script src="JS/PanierRetirer.js" type="text/javascript" ></script>	
+
+</html>

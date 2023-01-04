@@ -1,0 +1,92 @@
+/* Ce fichier css permet de modifier l'apparence et la position des differentes parties de la grille */
+/* GRILLE */
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 200px 800px;
+  grid-template-columns: 300px 200px 1000px 500px;
+  grid-gap: 5px;
+  color:white;
+}
+
+/*LOGO*/
+
+.logoEmplacement {
+	background:#00BFFF;
+	width: 160px;
+    height: 130px;
+}
+
+/*IDENTIFICATION ET BIENVENUE*/
+
+.identificationEmplacement {
+	background:#00BFFF;
+	border: black 5px solid;
+	height: 40px;
+	width: 90px;
+}
+
+.bienvenue {
+	background:#0A074F;
+	height: 70px;
+	width: 725px;
+}
+
+/*PANIER*/
+
+.panierEmplacement {
+	background:#00BFFF;
+	border: black 5px solid;
+	width: 350px;
+	height: 480px;
+}
+
+/*CATEGORIES*/
+
+.categoriesEmplacement {
+	background:#00BFFF;
+	border: black 5px solid;
+	width: 250px;
+	height: 562.5px;
+}
+
+/*JEUX*/
+
+.jeuxEmplacement {
+	background:#00BFFF;
+	border: black 5px solid;
+	width:1150px;
+	height: 900px;
+	grid-template-rows: 227px 227px 227px 227px;
+    grid-template-columns: 300px 850px;
+	display: grid;
+}
+
+
+.imagesEmplacement{
+	border: black 3px solid;
+}	
+
+.descriptionEmplacement{
+	border: black 3px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
